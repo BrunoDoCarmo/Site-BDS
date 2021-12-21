@@ -9,14 +9,7 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex'
 export default ({
-  name: 'AppCategoryItem',
-  computed: {
-    ...mapState([
-      'appCategoryButton'
-    ])
-  },
   props: {
     item: Object
   }

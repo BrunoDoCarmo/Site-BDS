@@ -11,7 +11,7 @@
 </template>
 <script>
 import AppTopNavigatorDescription from "../components/AppTopNavigatorDescription.vue";
-import AppImgPages from '../components/AppImgPages.vue'
+import AppImgPages from '../components/AppImgPage.vue'
 import AppAbout from '../components/AppAbout.vue'
 import AppFooter from '../components/AppFooter.vue'
 export default {

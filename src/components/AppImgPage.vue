@@ -1,12 +1,25 @@
 <template>
   <section class="home" id="home">
     <div class="content">
-      <h3>PDV WEB</h3>
+      <AppImgPageItem v-for="(appImgPageBox, index) in appImgPageBoxs" :key="index" :item="appImgPageBox" />
       <a href="#about" class="arrow"><i class="fas fa-arrow-down"></i></a>
     </div>
   </section>
 </template>
 <script>
+import { mapState } from 'vuex'
+import AppImgPageItem from '../components/AppImgPageItem.vue'
+export default {
+  name: 'appImgPage',
+  computed: {
+    ...mapState([
+      'appImgPageBoxs'
+    ])
+  },
+  components: {
+    AppImgPageItem,
+  }
+}
 </script>
 <style scoped>
   .home{
@@ -28,17 +41,6 @@
   .home .content{
     text-align: center;
     width: 100%;
-  }
-  .home .content h3{
-    color:var(--white);
-    font-size: 8rem;
-    padding:1rem 0;
-    line-height: 1.8;
-    text-shadow: 5px 3px 5px var(--font-color-hover);
-  }
-  .home .content p{
-    color: var(--white);
-    font-size: 1.7rem;
   }
   .home .content .arrow:hover,
   .home .content .arrow i:hover {

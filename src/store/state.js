@@ -199,6 +199,23 @@ export default {
       icon: 'fab fa-telegram-plane',
     },
   ],
+  // appImgPageTittle: 'PDV WEB',
+  appImgPageBoxs: [
+    {
+      icon: require('../assets/Icons/serv-1.png'),
+      title: 'Sobre',
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?',
+      id: '#',
+      button: 'Saiba Mais'
+    },
+    {
+      icon: require('../assets/Icons/serv-1.png'),
+      title: 'Slide',
+      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?',
+      id: '#',
+      button: 'Saiba Mais'
+    },
+  ],
   appFooterCredit: 'Desenvolvido por BDS - Informática!',
   floatButtonLink:
     'https://api.whatsapp.com/send?phone=5544991567410&text=Olá, vim através do site...',
